@@ -81,14 +81,6 @@ export default function PrivatePage() {
           onChange={(e) => setSearch(e.target.value)}
         />
         <button onClick={handleSearch}>Search</button>
-        <button
-          onClick={() => {
-            setSearch("");
-            fetchBooks();
-          }}
-        >
-          Clear
-        </button>
       </div>
 
       <div>
