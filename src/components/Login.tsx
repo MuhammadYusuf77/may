@@ -22,8 +22,7 @@ export default function Login() {
       secret: "mySecret",
     };
 
-    const res = await API.post("/signin", data);
-    console.log("Login response:", res.data);
+    const res = await API.post("/signup", data);
 
     const { key, secret } = res.data;
     setAuthData(key, secret);
